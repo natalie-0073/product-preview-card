@@ -51,6 +51,11 @@
   color: #fff;
   font-weight: 500;
   margin-top: 20px;
+  transition: all 0.2s;
+}
+.box .buy:hover {
+  background-color: #1A4031;
+  cursor: pointer;
 }
 .box .cart {
   display: inline;
