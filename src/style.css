@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500&display=swap");
+.box {
+  padding: 0;
+  margin: 0;
+  background-color: #F3EAE3;
+  font-family: "Roboto", sans-serif;
+}
+.box .comment {
+  margin: 0;
+  letter-spacing: 0.38rem;
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 10px;
+  color: grey;
+}
+.box .owner {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 0.9;
+  padding-bottom: 13px;
+}
+.box .description {
+  color: grey;
+  font-size: 14px;
+}
+.box .price {
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  color: #3D8168;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.box .old-price {
+  font-size: 10px;
+  color: grey;
+  font-family: "Noto Sans Mono", monospace;
+  text-decoration: line-through;
+}
+.box .buy {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  width: 100%;
+  background-color: #3D8168;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.box .cart {
+  display: inline;
+  max-width: 23px;
+  margin: -1px 5px 0 0;
+}
+
+.row {
+  width: 550px;
+  background-color: #fff;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.row .col-6 img {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */
