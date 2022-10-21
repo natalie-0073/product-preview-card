@@ -7,7 +7,12 @@
   background-color: #F3EAE3;
   font-family: "Roboto", sans-serif;
 }
-.box .comment {
+.box .img-col {
+  background: url(./img/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box .product__comment {
   margin: 0;
   letter-spacing: 0.38rem;
   text-align: left;
@@ -15,17 +20,17 @@
   font-size: 10px;
   color: grey;
 }
-.box .owner {
+.box .product__owner {
   font-family: "Fraunces", serif;
   font-weight: 900;
   line-height: 0.9;
   padding-bottom: 13px;
 }
-.box .description {
+.box .product__description {
   color: grey;
   font-size: 14px;
 }
-.box .price {
+.box .product__price {
   font-family: "Fraunces", serif;
   font-size: 1.8rem;
   color: #3D8168;
@@ -34,13 +39,13 @@
   align-items: center;
   gap: 12px;
 }
-.box .old-price {
+.box .product__price--old {
   font-size: 10px;
   color: grey;
   font-family: "Noto Sans Mono", monospace;
   text-decoration: line-through;
 }
-.box .buy {
+.box .product__buy {
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -53,7 +58,7 @@
   margin-top: 20px;
   transition: all 0.2s;
 }
-.box .buy:hover {
+.box .product__buy:hover {
   background-color: #1A4031;
   cursor: pointer;
 }
@@ -80,4 +85,18 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .box .img-col {
+    background: url(./img/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 38%;
+  }
+  .row {
+    height: 590px;
+    width: 310px;
+  }
 }/*# sourceMappingURL=style.css.map */

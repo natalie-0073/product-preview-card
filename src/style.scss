@@ -11,7 +11,13 @@ $primaryColor: #3D8168;
     margin: 0;
     background-color: #F3EAE3;
     font-family: $primaryFont;
-    .comment{
+    .img-col{
+        background: url(./img/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .product__comment{
         margin: 0;
         letter-spacing: 0.38rem;
         text-align: left;
@@ -19,17 +25,17 @@ $primaryColor: #3D8168;
         font-size: 10px;
         color: grey;
     }
-    .owner{
+    .product__owner{
         font-family: $curvyFont;
         font-weight: 900;
         line-height: 0.9;
         padding-bottom: 13px;
     }
-    .description{
+    .product__description{
         color: grey;
         font-size: 14px;
     }
-    .price{
+    .product__price{
         font-family: $curvyFont;
         font-size: 1.8rem;
         color: $primaryColor;
@@ -38,13 +44,13 @@ $primaryColor: #3D8168;
         align-items: center;
         gap: 12px;
     }
-    .old-price{
+    .product__price--old{
         font-size: 10px;
         color: grey;
         font-family: 'Noto Sans Mono', monospace;
         text-decoration: line-through;
     }
-    .buy{
+    .product__buy{
         display: flex;
         text-decoration: none;
         justify-content: center;
@@ -86,4 +92,20 @@ $primaryColor: #3D8168;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+@media(max-width:576px){
+    .box{
+        .img-col{
+            background: url(./img/image-product-mobile.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+           height: 38%;
+        }
+    }
+    
+    .row{
+        height: 590px;
+        width: 310px;
+    }
 }
